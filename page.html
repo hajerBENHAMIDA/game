@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="ISO-8859-5">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Super Mario HTML5 Test</title>
+
+    <link href="Content/style.css" rel="stylesheet"  />
+    <link href="Content/alertify.css" rel="stylesheet" />
+    <link href="Content/themes/default.rtl.min.css" rel="stylesheet" />
+    <link href="Content/jquery-confirm.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body > 
+     <img src="Content/Bacteria_sprites.png" alt="normal_spirites" style="display: none">
+     <img src="Content/Bacteria_sprites_all_evolutions-03.png" alt="ns_spirites " style="display: none">
+     <img src="Content/Bacteria_sprites-01.png" alt="Bacteria_sprites-01 " style="display: none">
+     <img src="Content/Bacteria_sprites-01.png" alt="Bacteria_sprites-01 " style="display: none">
+     <img src="Content/bSoVrpj.jpg" alt="SoVrp-01 " style="display: none">
+     <img src="Content/mario-enemie9.png" alt="Sosqqsp-01 " style="display: none">
+     <img src="Content/mario-objects_7.png" alt="Soobjects1 " style="display: none">
+    
+    <div id="BMR" class="BMR_perso">
+        <div id="BMR1" class="BMR1" style="display: none"></div>
+        <div id="BMR2" class="BMR2" style="display: none"></div>
+        <div id="BMR3" class="BMR3" style="display: none"></div>
+        <div id="BMR4" class="BMR4"style="display: none" ></div>
+        <div id="BMR5" class="BMR5" style="display: none"></div>
+    </div>
+    <div id="play1" class=" button_play1" style="display: none"></div>
+    
+
+
+
+     <div id="main2"> </div>
+     <div id="gameove" class="gameover" style="display: none"></div>
+
+     <div id="game" class="blur">
+        <div id="world">
+        </div>
+        <div id="coinNumber" class="" style="display: none">0</div>
+        <div id="coin" class="" style="display: none"></div>
+        <div id="liveNumber" class="" style="display: none">0</div>
+        <div id="live" class="" style="display: none"></div>
+    </div>
+</div>
+
+
+    <div id="mute_btn"  style="display: none"> </div>
+        <div id="unmute_btn"  style="display: none"> </div>
+            <script src="Scripts/jquery.js"></script>
+            <script src="Scripts/jquery-confirm.js"></script>
+            <script src="Scripts/testlevels.js"></script>
+            <script src="Scripts/oop.js"></script>
+            <script src="Scripts/keys.js"></script>
+            <script src="Scripts/constants.js"></script>
+            <script src="Scripts/main.js"></script>
+            <script src="Scripts/alertify.js"></script>
+            <script src="Scripts/cashe.js"></script>
+            <script src="Scripts/functions.js"></script>
+            <audio src="Content/audio/hap_tro.mp3" preload="auto"></audio>
+            <audio src="Content/audio/nsmbwii1up1.wav" preload="auto"></audio>
+            <audio src="Content/audio/nsmbwiiCoin.wav" preload="auto"></audio>
+            <audio src="Content/audio/Ta_Da.mp3" preload="auto"></audio>
+            <audio src="Content/audio/die.wav" preload="auto"></audio>
+            <audio src="Content/audio/nsmbwiiJump.wav" preload="auto"></audio>
+            <audio src="Content/audio/sm64_mario_hurt.wav" preload="auto"></audio>
+
+            <script>
+            </script>
+            <script>
+                $.cacheImage(['Content/Bacteria_sprites.png', 'Content/Bacteria_sprites_all_evolutions-03.png','Content/Bacteria_sprites-01.png','Content/bSoVrpj.jpg','Content/mario-enemie9.png','Content/mario-objects_7.png','Content/mario-objects_8.png','Content/2224098708.jpeg'], {
+                  load    : function (e) { console.log('Loaded',    this, e); },
+                  error   : function (e) { console.log('Error',     this, e); },
+                  abort   : function (e) { console.log('Aborted',   this, e); },
+                  // complete callback is called on load, error and abort
+                  complete: function (e) { console.log('Completed', this, e); }
+                });
+            </script>
+              
+</body>
+
+</html>
